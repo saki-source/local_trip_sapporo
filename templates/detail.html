@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ローカルぶらり旅　詳細</title>
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/detail.css">
+    <!-- slick CSS CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+<body>
+    <div id="sp-box">
+        <header>
+            <h1><a href="/">ローカルぶらり旅</a></h1>
+        </header>
+
+        <div id="detail">
+            <p class="place_name">{{place_name}}</p>
+            <div class="image">
+                <img src="../static/place_img/{{place_img_ent}}" alt="入口写真1">
+            </div>
+            <div class="info">
+                <p>電話番号：{{tel_number}}</p>
+                <p>営業時間：{{place_time}}</p>
+                <p>定休日：{{holiday}}</p>
+                <p>ホームページ：<a href="{{place_url}}" target="_blank">{{place_url}}</a></p>
+            </div>
+            <div class="info_text">
+                <p>{{text}}</p>
+            </div>
+        </div>
+         
+        <div class="carousel"><!-- このセレクタをjsで指定する -->
+            <div><img src="../static/place_img/{{place_img_con}}" alt="おすすめ" id="content1"></div>
+            <div><img src="../static/place_img/{{place_img_in}}" alt="中の様子" id="content2"></div>
+        </div>
+
+        <div class="map">
+            <iframe src="{{map}}" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="address">
+                <p>{{address}}</p>
+            </div>
+        </div>
+
+        <div class="icon">
+            <a onclick="history.back()" id="top">一覧に戻る</a>
+        </div>
+
+        <footer>
+            <p><small>&copy; ローカルぶらり旅 2023</small></p>
+        </footer>
+    </div>
+
+    <script src="../static/js/jquery-3.6.3.js"></script>
+    <!-- slick js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('.carousel').slick({
+            // ここに slick のオプションを指定
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
+    </script>
+</body>
+</html>

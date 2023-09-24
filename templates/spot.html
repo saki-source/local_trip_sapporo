@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ローカルぶらり旅「見る」一覧</title>
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/list.css">
+</head>
+<body>
+    <div id="sp-box">
+        <header>
+            <h1><a href="/">ローカルぶらり旅</a></h1>
+            <div class="balloon-right">
+                <p>どこの<br>場所に<br>行く？</p>
+            </div>
+        </header>
+
+        <div class="circle">
+            <p>気になる場所をタッチ！</p>
+        </div>
+
+        <div id="container">
+
+            <section id="sec1">
+                <div class="spot1">
+                    <div class="center">
+                    <a href="/detail/7"><img src="../static/place_img/{{place_img_ent}}" alt="入口写真1"></a>
+                    </div>
+                    <span>{{place_name}}</span>
+                    <p>北12条駅から徒歩約5分</p>
+                    <p>夏は緑色、秋は黄金色のトンネル</p>
+                </div>
+            </section>
+            
+            <section id="sec2">
+                <div class="spot2">
+                    <div class="center">
+                    <a href="/detail/8"><img src="../static/place_img/{{place_img_ent2}}" alt="入口写真2"></a>
+                    </div>
+                    <span>{{place_name2}}</span>
+                    <p>札幌駅から徒歩約10分</p>
+                    <p>約4000種類の植物を育成</p>
+                </div>
+            </section>
+
+            <section id="sec3">
+                <div class="spot3">
+                    <div class="center">
+                    <a href="/detail/9"><img src="../static/place_img/{{place_img_ent3}}" alt="入口写真3"></a>
+                    </div>
+                    <span>{{place_name3}}</span>
+                    <p>北12条駅から徒歩約9分</p>
+                    <p>大学構内にあり、入場無料</p>
+                </div>
+            </section>
+            
+        </div>
+        <div class="icon">
+            <a href="#" id="top">top</a>
+        </div>
+
+        <footer>
+            <p><small>&copy; ローカルぶらり旅 2023</small></p>
+        </footer>
+    </div>
+    
+    <script type="text/javascript" src="../static/js/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

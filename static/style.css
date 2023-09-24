@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* -----共通部分ここから----- */
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-size: 100%;
+    background-color: #F5D393;
+}
+
+#sp-box {
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* -----共通部分ここまで----- */
+
+header {
+    height: 30px;
+    background-color: #FFA152;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 20px;
+    opacity: 0.7;
+}
+
+.top_logo {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.map-img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 22.5px;
+    bottom: -40px;
+    margin: auto;
+}
+
+.top_logo h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #D6F593;
+    text-shadow: 1px 2px 3px #000;
+}
+
+.top_wrapper {
+    position: relative;
+}
+
+.fa-solid {
+    background-color: #FFA152;
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    text-indent: 0.15rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.top_text {
+    text-align: center;
+    padding: 60px 0 0;
+}
+
+.top_text p {
+    font-size: 20px;
+    background-color: #fff;
+    display: inline;
+}
+
+#container {
+    width: 360px;
+    padding: 45px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    height: 180px;
+    min-width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+}
+
+.btn:before {
+    background: rgba(0, 0, 0, .3);
+    bottom: 0;
+    content: '';
+    height: auto;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .3s ease;
+    width: 100%;
+    z-index: 1;
+}
+
+.btn:hover:before {
+    opacity: 1;
+}
+
+.btn:hover:after {
+    transform: scale(1.2);
+}
+
+.btn a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn a {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+    background-color: #fff;
+    display: block;
+    width: 60%;
+    padding: 3px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.btn-food:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../static/img/food_photo07.png) no-repeat center center;
+    background-size: cover;
+    transition: all .3s ease-out;
+}
+
+.btn-rest:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../static/img/rest_photo12.png) no-repeat center center;
+    background-size: cover;
+    transition: all .3s ease-out;
+}
+
+.btn-spot:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../static/img/spot_photo01.png) no-repeat center center;
+    background-size: cover;
+    transition: all .3s ease-out;
+}
+
+.btn-rest {
+    margin-left: 50%;
+}
+
+footer {
+    height: 30px;
+    background-color: #948989;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 6px;
+}
